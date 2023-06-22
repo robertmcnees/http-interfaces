@@ -1,5 +1,6 @@
 # Spring Http Interface Clients CRUD Walkthrough
 
+
 This is a complete example of how to create a new client in Spring using Http Interfaces. This is a Maven Multi Module project
 that consists of the following services.
 
