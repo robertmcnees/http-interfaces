@@ -14,18 +14,4 @@ import java.util.Optional;
 
 public interface ArticleClient {
 
-    @GetExchange("/articles")
-    ResponseEntity<List<Article>> findAll();
-
-    @GetExchange("/articles/{id}")
-    Optional<Article> findOne(@PathVariable Integer id);
-
-    @PostExchange("/articles")
-    void create(@RequestBody Article article);
-
-    @PutExchange("/articles/{id}")
-    void update(@RequestBody Article article, @PathVariable Integer id);
-
-    @DeleteExchange("/articles/{id}")
-    void delete(@PathVariable Integer id);
 }

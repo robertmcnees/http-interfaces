@@ -14,14 +14,7 @@ public class ClientConfig {
 
     @Bean
     ArticleClient articleClient() {
-        WebClient client = WebClient.builder()
-                .baseUrl("http://localhost:8081/api")
-                .build();
-        HttpServiceProxyFactory factory = HttpServiceProxyFactory
-                .builder(WebClientAdapter.forClient(client))
-                .blockTimeout(Duration.ofSeconds(7))
-                .build();
-        return factory.createClient(ArticleClient.class);
+        return null;
     }
 
 }
